@@ -1,0 +1,289 @@
+/******************************************************************
+Author:  Firefly Websites
+Author URI: http://fireflywebsites.co.uk/
+
+******************************************************************/
+@media screen {
+	body{
+		width: 100%;
+		overflow-x: hidden;
+		max-width:1020px;
+		margin:0 auto;
+		font-family: "Bebas Neue", arial, sans-serif;
+	}
+
+	.clearfix{
+		clear:both;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+		margin: 0 0 20px;
+		line-height: 1.3em;
+		text-transform: uppercase;
+		font-family: "Bebas Neue", arial, sans-serif;
+	}
+	h1, .h1 {
+	  font-size: 48px;
+	}
+
+	h2, .h2 {
+	  font-size: 36px;
+	}
+
+	h3, .h3 {
+	  font-size: 24px;
+	}
+
+	h4, .h4{
+	  font-size: 20px;
+	}
+
+	h5, .h5 {
+	  font-size: 18px;
+	}
+
+	h6, .h6 {
+	  font-size: 14px;
+	}
+	
+	.boxOut {
+		text-align: center;
+	}
+	input, input[type="text"], input[type="tel"], input[type="email"], input[type="url"], textarea, select {
+	margin: 0 0 5px 0;
+	height: auto;
+	color: #373737;
+	font-size: 100%;
+	font-family: inherit;
+	line-height: normal;
+	padding: 3px 0;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: none repeat scroll 0 0 #fafafa;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	}
+	.noBox{
+		border:none !important;
+		background:none !important;
+		box-shadow:none !important;
+		text-align:center !important;
+	}
+	p{
+		overflow: hidden;
+		margin-bottom:1em;
+	}
+	label{
+		text-align:left;
+	}
+	.form{
+		display:inline-block;
+		margin:0 auto;
+		text-align: left;
+	}
+	.important{
+		color:#117e2d;
+	}
+	.hidden{
+		visibility:hidden;
+		height:0 !important;
+		width:0 !important;
+		display: none;
+	}
+	.sliderCon{
+		margin-bottom:1em;
+		width:90%;
+		margin:0 auto;
+	}
+	select{
+		width:90%;
+		margin:0 auto;
+	}
+	.mSlider-wrap{
+		max-width: 720px;
+		width:96%;
+		margin:0 auto;
+	}
+	.ui-slider-horizontal{
+		height:1em;
+		background:#08b3be;
+		border-radius: 1em;
+	}
+	.ui-widget-header{
+		border-radius: 1em;
+		background: #02cb66; /* Old browsers */
+		background: -moz-linear-gradient(top,  #02cb66 0%, #02d5a7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cb66), color-stop(100%,#02d5a7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #02cb66 0%,#02d5a7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02cb66', endColorstr='#02d5a7',GradientType=0 ); /* IE6-9 */
+
+	}
+	.ui-slider .ui-slider-handle{
+		height:2em;
+		border-radius: 1em;
+		background: #02cb66; /* Old browsers */
+		background: -moz-linear-gradient(top,  #02cb66 0%, #02d5a7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cb66), color-stop(100%,#02d5a7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #02cb66 0%,#02d5a7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #02cb66 0%,#02d5a7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02cb66', endColorstr='#02d5a7',GradientType=0 ); /* IE6-9 */
+		border:solid 1px #fff;	
+	}
+	.widget-min, .widget-max, .ruler{
+		width:10%;
+		float:left;
+	}
+	.widget-max{
+		float:right;
+		text-align: right;
+	}
+	.ruler{
+		width:100%;
+		background: url("../images/ruler.png") repeat-x;
+		height: 1em;
+	}
+	.output{
+		background:#08b3be;
+		text-align:right;
+		font-size:1em;
+		margin: 0 auto;
+		border-radius: 2em;
+		padding: 0.5em 1em;
+		display:inline-block;
+		margin-bottom:1em;
+	}
+	.calcOut{
+		border: none;
+		background:transparent;
+		vertical-align: middle;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.button, input[type="submit"]{
+		box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+		background: #02D5A7;
+		border:none;
+		border-radius:4px;
+		padding: 0.5em 2em;
+		text-decoration:none;
+		color:#000;	
+		margin:0 0.5em;
+	}
+	#slider1{
+		clear: both;
+		margin: 15px 0;
+		padding: 0;
+		border: 1px solid #d3d3d3;
+		border-radius: 3px;
+		background-color: #eee;
+		padding: 0 14px;
+	}
+	.quoteForm td{
+		width:40%;
+		vertical-align: top;
+		padding-bottom: 1em;
+		text-align:center;
+	}
+	.quoteForm  td:last-child{
+		text-align:right;
+		width:20%;
+	}
+	.quoteForm  td:first-child{
+		text-align:left;
+	}
+	.quoteForm  td:last-child input{
+		text-align:left !important;
+		max-width: 100px;
+	}
+	.select{
+		width:90%;
+		margin:0 auto;
+	}
+	.currency{color: #373737;}
+	#payroll{
+		width:90%;
+		margin:0 auto;
+	}#payrollO, #payroll1{
+		display:inline-block;
+		overflow:hidden;
+	}
+	#payrollO{
+		float:left;
+		width:48%;
+	}
+	#payroll1{
+		float:right;
+		width:51%;
+	}
+	input[type="checkbox"]{
+		margin: 0 10px;
+		vertical-align: middle;
+	}
+	.space{
+		width:33px;
+		display: inline-block;
+	}
+
+	#bizTable td{
+		width:30%;
+		vertical-align: top;
+		padding-bottom: 1em;
+		text-align:left
+		display: block
+	}
+	.second{
+		width:20% !important;
+		display: block;
+	}
+	.first{
+		width:30% !important;
+		display: block;
+	}
+	table {
+		table-layout: fixed;
+		display: block;
+	}
+	.included {display: block;width: 990px;}
+}
+
+#emailto{
+	border-radius: 4px;
+	padding: 0.5em 2em;
+	border:solid 1px grey;
+}
+@media print {
+	.secondcol, .widgetS{
+		display:none;
+		height:0;
+	}
+	.calcOut{
+		border: none;
+		background:transparent;
+		vertical-align: middle;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	.output{
+		display:inline-block;
+	}
+	.hidden{display:none;}
+	.noBox {
+		border: none !important;
+		background: none !important;
+		box-shadow: none !important;
+		text-align: center !important;
+	}
+}
+

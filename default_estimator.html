@@ -1,0 +1,257 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src='./js/widget.js'></script>
+<script src='./js/jquery-ui.js'></script>
+<script src='./js/jquery.ui.touch-punch.min.js'></script>
+
+<script>$('#widget').draggable();</script>
+<div class="clearfix"></div>  
+
+
+
+	<form action="" method="POST" id="slider1" name="slider">
+		<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+		<table class="quoteForm" style="width:100%;padding-top:40px;">
+		
+			<tr id="section1">
+				<td><label class="widget-lb h4">What is your annual turnover?</label></br/>
+					<input name="priceS" type="text" id="priceS"  value="257" class="hidden"/>
+					<input name="priceP" type="text" id="priceP"  value="341"  class="hidden"/>
+					<input name="priceL" type="text" id="priceL"  value="414"  class="hidden"/>
+				</td>
+				<td style="text-align:center;">					
+					<div class="sliderCon widgetS">
+						<div id="slider-range-min"></div>
+						<p class="hslider-bg" style="min-width: 100%;">
+							<input name="turnover1" type="text" id="turnover1" value=""  class="noBox h5"  readonly />
+						</p>
+						<input name="step1" type="text" id="step1"  value="" maxlength="4" size="4" class="hidden"/></br>
+										
+					</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><label class="widget-lb h4">What type of business are you?</label></td>
+				<td><select id="bizType" name="bizType" value="select">
+				<option value="0">Select Your Company Type</option>
+				<option value="1">Sole trader</option>
+				<option value="2">Partnership</option>
+				<option value="3">Limited company</option>
+				</select></td>
+				<td><span class="currency">£</span><input name="priceCo" type="text" id="priceCo"  class="noBox h5" value="" /></td>
+			<tr id="bizTable" class="hidden">
+					<td><h5>The above fees include the following: -</h5></td>
+			</tr>
+			<tr class="included">
+				<td class="first">
+					<table id="bizType1" class="hidden">
+						<tr><td>Year end accounts</td></tr>
+						<tr><td>Personal tax return</td></tr>
+						<tr><td>Partnership tax return</td></tr>
+						<tr><td>Corporation tax return</td></tr>
+						<tr><td>Calculation of tax liability</td></tr>
+					</table>
+
+				</td>
+				<td class="second">
+					<table id="sole" class="hidden">
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>
+					<table id="partner" class="hidden">
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>
+					<table id="ltd" class="hidden">
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>					
+				</td>
+				<td class="first">
+					<table id="bizType2" class="hidden">
+						<tr><td>Submission of accounts</td></tr>
+						<tr><td>Submission of tax return</td></tr>
+						<tr><td>Free bookkeeping system (if required)</td></tr>
+						<tr><td>Tax tips e-newsletter</td></tr>
+						<tr><td>Support via email and telephone</td></tr>
+					</table>				
+				</td>
+				<td  class="second">
+					<table id="sole1" class="hidden">
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>	
+					<table id="partner1" class="hidden">
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>						
+					<table id="ltd1" class="hidden">
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+						<tr><td>&#10004;</td></tr>
+					</table>						
+				</td>				
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>				
+			</tr>
+		</table>
+		<table class="quoteForm" style="width:100%;">
+			<tr><td style="width:100%;"><hr></td></tr>
+		</table>
+		<table class="quoteForm" style="width:100%;">
+			<tr>
+				<td><h4>Additional Services</h4></td>
+				<td></td>
+				<td></td>
+			</tr>
+				<td><input type="checkbox" name="hmrc1" value="hmrc1">Add HMRC enquiry protection insurance</td>
+				<td><input class="noBox h5" readonly></td>
+				<td>
+					<div id="additional">
+						<span class="currency">£<input name="hmrc" type="text" id="hmrc" value="0"  class="noBox h5"  readonly  /></span>
+					</div>
+				</td>
+				
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="book" value="book">Add Bookkeeping and VAT</td>
+				<td>
+					<div id="bookkeeping" class="hidden">
+						<select id="bookkeeping" name="bookkeeping" value="select">
+							<option value="0">Select</option>
+							<option value="1">0 - 49 Monthly Translations</option>
+							<option value="2">50 - 99 Monthly Translations</option>
+							<option value="3">100 - 199 Monthly Translations</option>
+							<option value="4">200 - 299 Monthly Translations</option>
+							<option value="5">300 - 500 Monthly Translations</option>
+						</select>
+					</div>	
+				</td>
+				<td><span class="currency">£</span><input name="priceBook" type="text" id="priceBook"  value="0" class="noBox h5"  readonly /></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="book1" value="book1">Add VAT return only<br/>
+					<div class="space">&nbsp;</div>(using your bookkeeping)
+				</td>
+				<td></td>
+				<td>
+					<span class="currency">£</span><input name="vat" type="text" id="vat" value="0"  class="noBox h5"  readonly  />
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="payroll" value="payroll">Add Payroll</td>
+				<td>
+					<div id="payroll" class="hidden">
+						<select id="payrollO" name="payrollO" value="select">
+							<option value="0">Select</option>
+							<option value="1">Weekly / fortnightly payroll</option>
+							<option value="2">Monthly / four weekly payroll</option>
+							<option value="3">Director only payroll</option>
+						</select><input name="payCost" type="text" id="payCost" value=""  class="hidden"   />
+						<div id="payroll1" class="hidden"><input name="payW" type="text" id="payW" placeholder="No. Employees"  class="hidden"   /></div>
+					</div>
+				</td>
+				<td><span class="currency">£</span><input name="payTotal" type="text" id="payTotal" value="0"  class="noBox h5"  readonly   /> 
+					<input name="paySub" type="text" id="paySub" value="0"   readonly  class="hidden" /> 
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="protect" value="protect">HMRC enquiry protection insurance (PAYE)</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="paye" type="text" id="paye" value="0"  class="noBox h5" readonly h5"   /></td>
+			</tr>	
+			<tr>
+				<td><input type="checkbox" name="companyCheck" value="companyCheck">Set up limited company</td>
+				<td>
+					 <select id="coSetup" name="coSetup" value="select" class="hidden">
+							<option value="0">Select</option>
+							<option value="1">Setup only</option>
+							<option value="2">Setup with VAT and PAYE registration</option>
+					</select> 				
+				</td>
+				<td><span class="currency">£</span><input name="coSetup1" type="text" id="coSetup1" value="0"  class="noBox h5" readonly  /></td>
+			</tr>	
+			<tr>
+				<td><input type="checkbox" name="regOffice" value="regOffice">Act as registered office</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="office" type="text" id="office" value="0"  class="noBox h5" readonly  /></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="secretaryCheck" value="secretaryCheck">Act as company secretary</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="secretary" type="text" id="secretary" value="0"  class="noBox h5" readonly  /></td>
+			</tr>	
+			<tr>
+				<td><input type="checkbox" name="returnCheck" value="returnCheck">Preparation of Annual Return</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="annualreturn" type="text" id="annualreturn" value="0"  class="noBox h5" readonly  /></td>
+			</tr>	
+			<tr>
+				<td><input type="checkbox" name="personalCheck" value="personalCheck">Preparation of personal tax returns</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="personaltax" type="text" id="personaltax" value="0"  class="noBox h5" readonly  /></td>
+			</tr>
+			<tr>
+				<td><div class="space">&nbsp;</div><input type="checkbox" name="landCheck" value="landCheck">- Land and property</td>
+				<td><input name="property" type="text" id="property" value="0"  class="hidden"   /></td>
+				<td><span class="currency">£</span><input name="landtax" type="text" id="landtax" value="0"  class="noBox h5" readonly  /></td>
+			</tr>
+			<tr>
+				<td><div class="space">&nbsp;</div><input type="checkbox" name="hmrcPCheck" value="hmrcPCheck">- HMRC enquiry protection insurance (SA)</td>
+				<td></td>
+				<td><span class="currency">£</span><input name="hmrcP" type="text" id="hmrcP" value="0"  class="noBox h5" readonly  /></td>
+			</tr>	
+			<tr>
+				<td><input type="checkbox" name="refCheck" value="refCheck">Completion of references/forms</td>
+				<td><input name="references" type="text" id="references" value="0"  class="hidden"   /></td>
+				<td><span class="currency">£</span><input name="refForms" type="text" id="refForms" value="0"  class="noBox h5" readonly  /></td>
+			</tr>		
+		</table>
+		<table class="quoteForm" style="width:100%;">
+			<tr><td style="width:100%;"><hr></td></tr>
+		</table>
+		<table class="quoteForm" style="width:100%;padding-top:40px;">
+
+				<td></td>
+				<td style="text-align:right;"><h3>Total</h3>Yearly Total</td>
+				<td ><h3>&nbsp;</h3><span class="currency">£</span><input  name="quoteTotalY" type="text" id="quoteTotalY" value=""  class="noBox h5" readonly   /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="text-align:right;">Monthly Total</td>
+				<td><span class="currency">£</span><input  name="quoteTotalM" type="text" id="quoteTotalM" value=""  class="noBox h5" readonly   /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="text-align: right;vertical-align: middle;"><a href="javascript:window.print()" class="button">Print</a> <a href="javascript:emailCurrentPage()" class="button">Email</a></td>
+				<td  style="text-align: left;vertical-align: middle;">	<input  id="emailto" name="emailto" type="text" placeholder="Enter email" style="max-width: 100%;"/><br/>	</td>
+			</tr>
+		</table>			
+
+			
+
+
+
